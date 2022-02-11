@@ -1,0 +1,18 @@
+<div class="centerism">
+    
+    <h3 class="p-3 mb-2 bg-primary text-white" style="text-align: center;">Project Management</h3>
+    <p>Enter Student Name <input type="text" style="width: 15em;" [(ngModel)]="studName1" class="form-control"/></p>
+    <p>Enter Student Number <input type="text" style="width: 15em;"  [(ngModel)]="studNum1" class="form-control"/></p>
+    <p>Enter Prelim Grade <input type="number" style="width: 10em;" [(ngModel)]="prelim1" class="form-control" placeholder="Prelim" /></p>
+    <p>Enter Midterm Grade <input type="number" style="width: 10em;" [(ngModel)]="midterm1" class="form-control" placeholder="Midterm" /></p>
+    <p>Enter Final Grade <input type="number" style="width: 10em;" [(ngModel)]="final1" class="form-control" placeholder="Final" /></p>
+    <br>
+
+    <h3 class="p-3 mb-2 bg-primary text-white" style="text-align: center;">Student Information</h3>
+    <p>Student Name : {{studName1}}</p>
+    <p>Student Number : {{studNum1}}</p>
+    <p>Prelim Grade : {{prelim1}}</p>
+    <p>Midterm Grade : {{midterm1}}</p>
+    <p>Final Grade : {{final1}}</p>
+    <p>Average of Project Management : {{(prelim1 + midterm1 + final1) / 3}}</p>
+</div>
