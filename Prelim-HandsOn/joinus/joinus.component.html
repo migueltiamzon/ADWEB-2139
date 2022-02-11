@@ -1,0 +1,28 @@
+<div class="card img-card bg-dark text-white">
+    <div class="card-img-overlay">
+    <div class="join">
+      <h2 class="title">Fill the form Below:</h2>
+        <div class="container content">
+            <div>
+                <div class="container">
+                    <p>Enter Name</p>
+                    <input type="text" class="forms" [(ngModel)]="firstName" placeholder="Enter First Name"/>
+                    <input type="text" class="forms" [(ngModel)]="lastName" placeholder="Enter Last Name">
+                </div>
+              <br>
+              <div class="container">
+                <p>Full Name: {{ firstName }} {{lastName}} </p> 
+                <input type="email" class="forms" id="inputEmail4" [(ngModel)]="email" placeholder="Enter Email Address">
+              <p>Email: {{email}}</p>
+              <div class="form-group">
+                <input type="text" class="forms" [(ngModel)]="acad" id="formGroupExampleInput" placeholder="Enter Academic Institution/Affiliation">
+              </div>
+              <p>Academic Institution: {{acad}}</p>
+              </div>
+            </div>    
+      </div>
+</div>
+</div>
+
+
+
